@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* Exercise
+* [Exercise](exercise.md)
    * Hello World
 
