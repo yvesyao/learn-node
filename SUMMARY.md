@@ -9,7 +9,7 @@
    * [FILTERED LS](filtered_ls.md)
    * [MAKE IT MODULAR](make_it_modular.md)
    * [HTTP CLIENT](http_client.md)
-   * HTTP COLLECT
+   * [HTTP COLLECT](http_collect.md)
    * JUGGLING ASYNC
    * TIME SERVER
    * HTTP FILE SERVER
