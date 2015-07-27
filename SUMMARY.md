@@ -15,5 +15,6 @@
    * [HTTP FILE SERVER](http_file_server.md)
    * [HTTP UPPERCASERER](http_uppercaserer.md)
    * [HTTP JSON API SERVER](http_json_api_server.md)
-* [Notes]()
+* [Notes](notes.md)
    * [http](hello_world.md)
+
