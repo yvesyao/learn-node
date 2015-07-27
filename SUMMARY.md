@@ -13,6 +13,6 @@
    * [JUGGLING ASYNC](juggling_async.md)
    * [TIME SERVER](time_server.md)
    * [HTTP FILE SERVER](http_file_server.md)
-   * HTTP UPPERCASERER
+   * [HTTP UPPERCASERER](http_uppercaserer.md)
    * [HTTP JSON API SERVER](http_json_api_server.md)
 
