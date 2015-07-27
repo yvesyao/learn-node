@@ -10,9 +10,9 @@
    * [MAKE IT MODULAR](make_it_modular.md)
    * [HTTP CLIENT](http_client.md)
    * [HTTP COLLECT](http_collect.md)
-   * JUGGLING ASYNC
-   * TIME SERVER
-   * HTTP FILE SERVER
+   * [JUGGLING ASYNC](juggling_async.md)
+   * [TIME SERVER](time_server.md)
+   * [HTTP FILE SERVER](http_file_server.md)
    * HTTP UPPERCASERER
    * HTTP JSON API SERVER
 
