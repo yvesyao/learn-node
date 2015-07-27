@@ -8,10 +8,11 @@
    * [MY FIRST ASYNC I/O!](my_first_async_io.md)
    * [FILTERED LS](filtered_ls.md)
    * [MAKE IT MODULAR](make_it_modular.md)
-   * [HTTP CLIENT]()
-   * [HTTP COLLECT]()
-   * [JUGGLING ASYNC]()
-   * [TIME SERVER]()
-   * [HTTP FILE SERVER]()
-   * [HTTP UPPERCASERER]()
-   * [HTTP JSON API SERVER]()
+   * [HTTP CLIENT](http_client.md)
+   * HTTP COLLECT
+   * JUGGLING ASYNC
+   * TIME SERVER
+   * HTTP FILE SERVER
+   * HTTP UPPERCASERER
+   * HTTP JSON API SERVER
+
