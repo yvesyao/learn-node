@@ -15,6 +15,6 @@
     
 # Notes
 
-### fs.readSync
-- Synchronous version of *fs.read*. Returns the number of *bytesRead*.
-- returns *Buffer*
+### fs.readFileSync
+- Synchronous version of *fs.readFile*. Returns the number of *filename*.
+- If the encoding option is specified then this function returns a string. Otherwise it returns a *Buffer*.

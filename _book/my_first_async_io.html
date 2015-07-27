@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Hello World | learn-node</title>
+        <title>MY FIRST ASYNC I/O! | learn-node</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.1.0">
@@ -25,10 +25,8 @@
         
     
     
-    <link rel="next" href="./baby_steps.html" />
     
-    
-    <link rel="prev" href="./exercise.html" />
+    <link rel="prev" href="./my_first_io.html" />
     
 
         
@@ -36,7 +34,7 @@
     <body>
         
         
-    <div class="book" data-level="1.1" data-basepath="." data-revision="Fri Jul 24 2015 16:48:25 GMT+0800 (CST)">
+    <div class="book" data-level="1.4" data-basepath="." data-revision="Fri Jul 24 2015 16:48:25 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -82,7 +80,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.1" data-path="hello_world.html">
+        <li class="chapter " data-level="1.1" data-path="hello_world.html">
             
                 
                     <a href="./hello_world.html">
@@ -127,7 +125,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="my_first_async_io.html">
+        <li class="chapter active" data-level="1.4" data-path="my_first_async_io.html">
             
                 
                     <a href="./my_first_async_io.html">
@@ -253,13 +251,37 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="files">Files</h1>
-<h2 id="mission-1-hello-js">mission-1-hello.js</h2>
-<pre><code>console.log(&apos;HELLO WORLD&apos;);
+<h2 id="mission-4-async-io-js">mission-4-async-io.js</h2>
+<pre><code>var fs = require(&apos;fs&apos;);
+fs.readFile(process.argv[2], &apos;utf8&apos;, function(err, data) {
+    if (err) throw err;
+    console.log(data.split(&apos;\n&apos;).length - 1);
+})
 </code></pre><h1 id="command">Command</h1>
-<pre><code>node mission-1-hello.js
+<pre><code>node mission-4-async-io.js ./mission-3-io.js
 </code></pre><h1 id="output">Output</h1>
-<pre><code>HELLO WORLD
-</code></pre>
+<pre><code>3
+</code></pre><h1 id="notes">Notes</h1>
+<h3 id="fs-readfile-filename-options-callback">fs.readFile(filename[, options], callback)</h3>
+<ul>
+<li><em>filename</em> String</li>
+<li><em>options</em> Object<ul>
+<li>encoding String | Null default = null</li>
+<li>flag String default = &apos;r&apos;</li>
+</ul>
+</li>
+<li><em>callback</em> Function</li>
+</ul>
+<blockquote>
+<p>Asynchronously reads the entire contents of a file. Example:</p>
+</blockquote>
+<pre><code>fs.readFile(&apos;/etc/passwd&apos;, function (err, data) {
+  if (err) throw err;
+  console.log(data);
+});
+</code></pre><p> The callback is passed two arguments (err, data), where data is the contents of the file.</p>
+<p> If no encoding is specified, then the raw buffer is returned.</p>
+
                     
                     </section>
                 
@@ -269,10 +291,8 @@
         </div>
 
         
-        <a href="./exercise.html" class="navigation navigation-prev " aria-label="Previous page: Exercise"><i class="fa fa-angle-left"></i></a>
+        <a href="./my_first_io.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: MY FIRST I/O!"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="./baby_steps.html" class="navigation navigation-next " aria-label="Next page: BABY STEPS"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
