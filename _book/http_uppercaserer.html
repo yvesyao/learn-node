@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="1.12" data-basepath="." data-revision="Mon Jul 27 2015 10:29:35 GMT+0800 (CST)">
+    <div class="book" data-level="1.12" data-basepath="." data-revision="Tue Sep 01 2015 15:00:19 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -282,18 +282,26 @@
             
         </li>
     
-        <li class="chapter " data-level="2" >
+        <li class="chapter " data-level="2" data-path="notes.html">
             
-            <span><b>2.</b> [Notes]</span>
+                
+                    <a href="./notes.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Notes
+                    </a>
+                
             
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1" data-path="hello_world.html">
+        <li class="chapter " data-level="2.1" data-path="notes/http.html">
             
                 
-                    <a href="./hello_world.html">
+                    <a href="./notes/http.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.</b>
@@ -415,7 +423,34 @@
                 
                     <section class="normal" id="section-">
                     
-                        
+                        <h1 id="files">Files</h1>
+<h2 id="mission-12-http-uppercaserer-js">mission-12-http-uppercaserer.js</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>),
+    port = process.argv[<span class="hljs-number">2</span>],
+    map = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;through2-map&apos;</span>),
+    server = http.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(req, res)</span> </span>{
+        <span class="hljs-keyword">if</span> (req.method != <span class="hljs-string">&apos;POST&apos;</span>)
+            <span class="hljs-keyword">return</span> res.end(<span class="hljs-string">&apos;send me a POST\n&apos;</span>)
+        req.pipe(map(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(chunk)</span> </span>{
+            <span class="hljs-keyword">return</span> chunk.toString().toUpperCase();
+        })).pipe(res);
+    });
+server.listen(port);
+</code></pre>
+<h1 id="command">Command</h1>
+<pre><code class="lang-console">
+
+</code></pre>
+<h1 id="output">Output</h1>
+<pre><code class="lang-html">........
+</code></pre>
+<h1 id="notes">Notes</h1>
+<ul>
+<li>through2-map</li>
+<li>request.method</li>
+<li>request</li>
+</ul>
+
                     
                     </section>
                 

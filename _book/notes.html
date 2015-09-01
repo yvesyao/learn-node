@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>MAKE IT MODULAR | learn-node</title>
+        <title>Notes | learn-node</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.1.0">
@@ -25,10 +25,10 @@
         
     
     
-    <link rel="next" href="./http_client.html" />
+    <link rel="next" href="./notes/http.html" />
     
     
-    <link rel="prev" href="./filtered_ls.html" />
+    <link rel="prev" href="./http_json_api_server.html" />
     
 
         
@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="1.6" data-basepath="." data-revision="Tue Sep 01 2015 15:00:19 GMT+0800 (CST)">
+    <div class="book" data-level="2" data-basepath="." data-revision="Tue Sep 01 2015 15:00:19 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -157,7 +157,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6" data-path="make_it_modular.html">
+        <li class="chapter " data-level="1.6" data-path="make_it_modular.html">
             
                 
                     <a href="./make_it_modular.html">
@@ -282,7 +282,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2" data-path="notes.html">
+        <li class="chapter active" data-level="2" data-path="notes.html">
             
                 
                     <a href="./notes.html">
@@ -423,62 +423,7 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="files">Files</h1>
-<h2 id="mission-6-modular-js">mission-6-modular.js</h2>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> dir = process.argv[<span class="hljs-number">2</span>],
-    ext = process.argv[<span class="hljs-number">3</span>],
-    mymodule = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./module-for-6.js&apos;</span>);
-mymodule(dir, ext, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err, data)</span> </span>{
-    <span class="hljs-keyword">if</span> (err) {
-        <span class="hljs-built_in">console</span>.log(err);
-        <span class="hljs-keyword">return</span>;
-    }
-    <span class="hljs-built_in">console</span>.log(data.join(<span class="hljs-string">&apos;\n&apos;</span>));
-});
-</code></pre>
-<h2 id="module-for-6-js">module-for-6.js</h2>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(dir, ext, callback)</span> </span>{
-    <span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>),
-        path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>),
-        result = [];
-    fs.readdir(dir, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err, files)</span> </span>{
-        <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">return</span> callback(err);
-        <span class="hljs-keyword">var</span> length = files &amp;&amp; files.length;
-        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; length; ++i) {
-            <span class="hljs-keyword">var</span> filePath = files[i];
-            <span class="hljs-keyword">if</span>(path.extname(filePath).substr(<span class="hljs-number">1</span>) === ext) {
-                result.push(filePath);
-            }
-        }
-        callback(<span class="hljs-literal">null</span>, result);
-    })
-};
-</code></pre>
-<h1 id="command">Command</h1>
-<pre><code class="lang-console">node mission-6-modular.js ./ js
-</code></pre>
-<h1 id="output">Output</h1>
-<pre><code>mission-1-hello.js
-mission-10-tcp-time-server.js
-mission-11-http-server.js
-mission-12-http-uppercaserer.js
-mission-13-http-json-api-server.js
-mission-2-baby-steps.js
-mission-3-io.js
-mission-4-async-io.js
-mission-5-filtered-ls.js
-mission-6-modular.js
-mission-7-http-client.js
-mission-8-http-collect.js
-mission-9-juggling-async.js
-module-for-6.js
-test-http.js
-</code></pre><h1 id="notes">Notes</h1>
-<ul>
-<li>exports</li>
-<li>require</li>
-</ul>
-
+                        
                     
                     </section>
                 
@@ -488,10 +433,10 @@ test-http.js
         </div>
 
         
-        <a href="./filtered_ls.html" class="navigation navigation-prev " aria-label="Previous page: FILTERED LS"><i class="fa fa-angle-left"></i></a>
+        <a href="./http_json_api_server.html" class="navigation navigation-prev " aria-label="Previous page: HTTP JSON API SERVER"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./http_client.html" class="navigation navigation-next " aria-label="Next page: HTTP CLIENT"><i class="fa fa-angle-right"></i></a>
+        <a href="./notes/http.html" class="navigation navigation-next " aria-label="Next page: http"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
